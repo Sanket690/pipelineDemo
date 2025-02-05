@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the repository from GitHub
-                git branch: 'master', url: 'https://github.com/Sanket690/pipelineDemo.git'
+                git branch: 'master', credentialsId: 'github-creds', url: 'https://github.com/Sanket690/pipelineDemo.git'
             }
         }
 
