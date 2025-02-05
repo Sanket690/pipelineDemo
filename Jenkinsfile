@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     // Run Maven build (change this if you're using another tool)
-                    withMaven(maven: 'Maven') {
+                    withMaven(maven: 'M3') {
                         bat 'mvn clean package'
                     }
                 }
